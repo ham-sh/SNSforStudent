@@ -68,15 +68,13 @@
       {% endif %}
       <a href="{% url 'app:everypost' post_id=post.id %}">
       <h4 class="card-title">{{post.title|truncatechars:10 | linebreaksbr}}</h4>
-      </a>
       <p class="card-text">
       　{{ post.content|truncatechars:17 }}
       </p>
       <p>投稿者　{{post.author}}</p>
-      <!-- <p>{{post.good}}</p>
-      <p>{{post.read}}</p> -->
+      <p>いいね{{post.good}}</p>
       <p>{{post.readtext}}</p>
-      
+    </a> 
     {% endfor %}
   </div>
 </div>

@@ -332,7 +332,7 @@ def goodfunc(request, pk):
     post = BoardModel.objects.get(pk=pk)
     post.good = post.good + 1
     post.save()
-    return redirect('app:student_home')
+    return redirect('app:everypost') # リダイレクトする場所？
 
 
 # Studentユーザに対するSocietyアカウントの一覧表示
