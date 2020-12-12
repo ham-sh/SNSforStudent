@@ -141,7 +141,7 @@ class CompanyProfileUpdateForm(forms.ModelForm):
     """societyのプロフィール更新用のフォーム定義"""
     class Meta:
         model = User
-        fields =['image','company_name','about_me'] 
+        fields =['image','company_name','about_me','url_info'] 
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
